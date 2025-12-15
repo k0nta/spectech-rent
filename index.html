@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Спецтехника — Продажа качественной техники</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+        <!-- Header -->
+        <header class="header">
+            <div class="container header__container">
+                <!-- Кнопка Бургер (слева) -->
+                <button class="header__burger" id="burgerBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <!-- Логотип (по центру или как было) -->
+                <div class="header__logo">Спецтех</div>
+
+                <!-- Навигация для ПК (скроем на мобильных) -->
+                <nav class="header__nav">
+                    <a href="index.html" class="header__link header__link--active">О Нас</a>
+                    <a href="page1.html" class="header__link">Каталог</a>
+                    <a href="contacts.html" class="header__link">Контакты</a>
+                    <a href="Services.html" class="header__link">Услуги</a>
+                </nav>
+
+                <!-- Логин (справа) -->
+                <a href="login.html" class="header__login">
+                    <span class="header__login-icon">👤</span> Войти
+                </a>
+            </div>
+
+
+            <div class="header__mobile-menu" id="mobileMenu">
+                <button class="header__close-btn" id="closeBtn">&times;</button> <!-- Крестик -->
+                <nav class="mobile-nav">
+                    <a href="index.html" class="mobile-nav__link">О Нас</a>
+                    <a href="page1.html" class="mobile-nav__link">Каталог</a>
+                    <a href="contacts.html" class="mobile-nav__link">Контакты</a>
+                    <a href="Services.html" class="mobile-nav__link">Услуги</a>
+                </nav>
+            </div>
+        </header>
+
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero__bg" style="background-image: url('img/background.png');"></div>
+            <div class="hero__overlay"></div>
+
+            <div class="container hero__content">
+                <h1 class="hero__title">Спецтехника<br>для любых задач</h1>
+                <p class="hero__subtitle">Продажа качественной техники по выгодной цене</p>
+                <a href="page1.html" class="button">Открыть каталог</a>
+            </div>
+        </section>
+
+
+        <!-- Categories -->
+        <section class="section categories">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Категории техники</h2>
+                    <a href="#" class="section__link">Смотреть все категории ></a>
+                </div>
+
+                <div class="categories__grid">
+                    <article class="category-card">
+                        <div class="category-card__image-wrapper">
+                            <img src="img/autocran.png" alt="Автокраны" class="category-card__image">
+                        </div>
+                        <h3 class="category-card__title">Автокраны</h3>
+                    </article>
+                    <article class="category-card">
+                        <div class="category-card__image-wrapper">
+                            <img src="img/pogrushik.png" alt="Погрузчики" class="category-card__image">
+                        </div>
+                        <h3 class="category-card__title">Погрузчики</h3>
+                    </article>
+                    <article class="category-card">
+                        <div class="category-card__image-wrapper">
+                            <img src="img/betonomeshalka.png" alt="Автобетоносмесители" class="category-card__image">
+                        </div>
+                        <h3 class="category-card__title">Автобетоносмесители</h3>
+                    </article>
+                    <article class="category-card">
+                        <div class="category-card__image-wrapper">
+                            <img src="img/samosval.png" alt="Самосвалы" class="category-card__image">
+                        </div>
+                        <h3 class="category-card__title">Самосвалы</h3>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Features (Преимущества) -->
+        <section class="section features">
+            <div class="container">
+                <h2 class="section__title">Наши преимущества</h2>
+
+                <div class="features__grid">
+                    <div class="feature-item">
+                        <img src="img/garant.png" alt="Качество" class="feature-item__icon">
+                        <span class="feature-item__text">Высокое<br>качество</span>
+                    </div>
+                    <div class="feature-item">
+                        <img src="img/skorost.png" alt="Доставка" class="feature-item__icon">
+                        <span class="feature-item__text">Доставка по<br>всей стране</span>
+                    </div>
+                    <div class="feature-item">
+                        <img src="img/garant.png" alt="Гарантия" class="feature-item__icon">
+                        <span class="feature-item__text">Гарантия<br>на технику</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Popular Models -->
+        <section class="section products">
+            <div class="container">
+                <h2 class="section__title">Популярные модели</h2>
+
+                <div class="products__grid">
+                    <article class="product-card">
+                        <div class="product-card__image-box">
+                            <img src="img/preview.png" alt="Трактор" class="product-card__image">
+                        </div>
+                        <h3 class="product-card__title">Название модели</h3>
+                        <p class="product-card__price">5 000 000₽</p>
+                        <a href="#" class="button button--outline product-card__button">Подробнее</a>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-card__image-box">
+                            <img src="img/preview.png" alt="Трактор" class="product-card__image">
+                        </div>
+                        <h3 class="product-card__title">Название модели</h3>
+                        <p class="product-card__price">5 000 000₽</p>
+                        <a href="#" class="button button--outline product-card__button">Подробнее</a>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-card__image-box">
+                            <img src="img/preview.png" alt="Трактор" class="product-card__image">
+                        </div>
+                        <h3 class="product-card__title">Название модели</h3>
+                        <p class="product-card__price">5 000 000₽</p>
+                        <a href="#" class="button button--outline product-card__button">Подробнее</a>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-card__image-box">
+                            <img src="img/preview.png" alt="Трактор" class="product-card__image">
+                        </div>
+                        <h3 class="product-card__title">Название модели</h3>
+                        <p class="product-card__price">5 000 000₽</p>
+                        <a href="#" class="button button--outline product-card__button">Подробнее</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Stats (О компании) -->
+        <section class="section stats">
+            <div class="container">
+                <h2 class="section__title">О Компании</h2>
+
+                <div class="stats__grid">
+                    <div class="stat-item">
+                        <div class="stat-item__number">10+</div>
+                        <div class="stat-item__text">Лет на рынке</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-item__number">150+</div>
+                        <div class="stat-item__text">Положительных<br>отзывов</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-item__number">45+</div>
+                        <div class="stat-item__text">Компаний<br>доверяют нам</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container footer__container">
+                <div class="footer__info">
+                    <h2 class="footer__title">Свяжитесь С Нами</h2>
+                    <p class="footer__desc">Остались вопросы? Не стесняйтесь задавать их!</p>
+                    <a href="mailto:example@gmail.com" class="footer__email">example@gmail.com</a>
+                </div>
+
+                <div class="footer__socials">
+                    <a href="#" class="social-link"><img src="icons/telegram.svg" alt="Telegram"></a>
+                    <a href="#" class="social-link"><img src="icons/vk.svg" alt="VK"></a>
+                    <a href="#" class="social-link"><img src="icons/whatsup.svg" alt="WhatsApp"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

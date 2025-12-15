@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог Спецтехники</title>
+  <!-- Подключение шрифтов -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+  <div class="page-wrapper">
+    <header class="header">
+      <div class="container header__container">
+        <!-- Кнопка Бургер (слева) -->
+        <button class="header__burger" id="burgerBtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- Логотип (по центру или как было) -->
+        <div class="header__logo">Спецтех</div>
+
+        <!-- Навигация для ПК (скроем на мобильных) -->
+        <nav class="header__nav">
+          <a href="index.html" class="header__link">О Нас</a>
+          <a href="page1.html" class="header__link header__link--active">Каталог</a>
+          <a href="contacts.html" class="header__link">Контакты</a>
+          <a href="Services.html" class="header__link">Услуги</a>
+        </nav>
+
+        <!-- Логин (справа) -->
+        <a href="login.html" class="header__login">
+          <span class="header__login-icon">👤</span> Войти
+        </a>
+      </div>
+
+      <!-- Мобильное меню (скрыто по умолчанию) -->
+      <div class="header__mobile-menu" id="mobileMenu">
+        <button class="header__close-btn" id="closeBtn">&times;</button> <!-- Крестик -->
+        <nav class="mobile-nav">
+          <a href="index.html" class="mobile-nav__link">О Нас</a>
+          <a href="page1.html" class="mobile-nav__link">Каталог</a>
+          <a href="contacts.html" class="mobile-nav__link">Контакты</a>
+          <a href="Services.html" class="mobile-nav__link">Услуги</a>
+        </nav>
+      </div>
+    </header>
+
+
+    <!-- Основной контент (Обернул в section и добавил класс section) -->
+    <section class="section catalog">
+      <div class="container">
+
+        <!-- Заголовок и сортировка -->
+        <div class="catalog__top-bar">
+          <h1 class="catalog__title">Каталог техники</h1>
+
+          <!-- Выпадающий список сортировки -->
+          <div class="sort-dropdown">
+            <div class="sort-dropdown__trigger">
+              <span class="sort-dropdown__text">Сортировать</span>
+              <img class="sort-dropdown__icon" src="icons/arrow_down.svg" alt="arrow" width="15px">
+            </div>
+
+            <ul class="sort-dropdown__list">
+              <li class="sort-dropdown__item">По цене</li>
+              <li class="sort-dropdown__item">По алфавиту</li>
+              <li class="sort-dropdown__item">По рейтингу</li>
+            </ul>
+          </div>
+        </div>
+
+
+        <!-- Сетка товаров -->
+        <div class="catalog__grid">
+          <!-- Карточка 1 -->
+          <article class="product-card">
+            <div class="product-card__image-wrapper">
+              <img class="product-card__image" src="img/preview.png" alt="Спецтехника">
+            </div>
+            <h3 class="product-card__title">Название модели</h3>
+            <p class="product-card__price">5 000 000₽</p>
+            <button class="product-card__button">Подробнее</button>
+          </article>
+
+
+          <!-- Карточка 2 -->
+          <article class="product-card">
+            <div class="product-card__image-wrapper">
+              <img class="product-card__image" src="img/preview.png" alt="Спецтехника">
+            </div>
+            <h3 class="product-card__title">Название модели</h3>
+            <p class="product-card__price">5 000 000₽</p>
+            <button class="product-card__button">Подробнее</button>
+          </article>
+
+
+          <!-- Карточка 3 -->
+          <article class="product-card">
+            <div class="product-card__image-wrapper">
+              <img class="product-card__image" src="img/preview.png" alt="Спецтехника">
+            </div>
+            <h3 class="product-card__title">Название модели</h3>
+            <p class="product-card__price">5 000 000₽</p>
+            <button class="product-card__button">Подробнее</button>
+          </article>
+
+
+          <!-- Карточка 4 -->
+          <article class="product-card">
+            <div class="product-card__image-wrapper">
+              <img class="product-card__image" src="img/preview.png" alt="Спецтехника">
+            </div>
+            <h3 class="product-card__title">Название модели</h3>
+            <p class="product-card__price">5 000 000₽</p>
+            <button class="product-card__button">Подробнее</button>
+          </article>
+
+
+          <!-- Карточка 5 -->
+          <article class="product-card">
+            <div class="product-card__image-wrapper">
+              <img class="product-card__image" src="img/preview.png" alt="Спецтехника">
+            </div>
+            <h3 class="product-card__title">Название модели</h3>
+            <p class="product-card__price">5 000 000₽</p>
+            <button class="product-card__button">Подробнее</button>
+          </article>
+
+
+          <!-- Карточка 6 -->
+          <article class="product-card">
+            <div class="product-card__image-wrapper">
+              <img class="product-card__image" src="img/preview.png" alt="Спецтехника">
+            </div>
+            <h3 class="product-card__title">Название модели</h3>
+            <p class="product-card__price">5 000 000₽</p>
+            <button class="product-card__button">Подробнее</button>
+          </article>
+
+
+          <!-- Карточка 7 -->
+          <article class="product-card">
+            <div class="product-card__image-wrapper">
+              <img class="product-card__image" src="img/preview.png" alt="Спецтехника">
+            </div>
+            <h3 class="product-card__title">Название модели</h3>
+            <p class="product-card__price">5 000 000₽</p>
+            <button class="product-card__button">Подробнее</button>
+          </article>
+
+
+          <!-- Карточка 8 -->
+          <article class="product-card">
+            <div class="product-card__image-wrapper">
+              <img class="product-card__image" src="img/preview.png" alt="Спецтехника">
+            </div>
+            <h3 class="product-card__title">Название модели</h3>
+            <p class="product-card__price">5 000 000₽</p>
+            <button class="product-card__button">Подробнее</button>
+          </article>
+
+
+          <!-- Карточка 9 -->
+          <article class="product-card">
+            <div class="product-card__image-wrapper">
+              <img class="product-card__image" src="img/preview.png" alt="Спецтехника">
+            </div>
+            <h3 class="product-card__title">Название модели</h3>
+            <p class="product-card__price">5 000 000₽</p>
+            <button class="product-card__button">Подробнее</button>
+          </article>
+
+
+          <!-- Карточка 10 -->
+          <article class="product-card">
+            <div class="product-card__image-wrapper">
+              <img class="product-card__image" src="img/preview.png" alt="Спецтехника">
+            </div>
+            <h3 class="product-card__title">Название модели</h3>
+            <p class="product-card__price">5 000 000₽</p>
+            <button class="product-card__button">Подробнее</button>
+          </article>
+
+
+          <!-- Карточка 11 -->
+          <article class="product-card">
+            <div class="product-card__image-wrapper">
+              <img class="product-card__image" src="img/preview.png" alt="Спецтехника">
+            </div>
+            <h3 class="product-card__title">Название модели</h3>
+            <p class="product-card__price">5 000 000₽</p>
+            <button class="product-card__button">Подробнее</button>
+          </article>
+
+
+          <!-- Карточка 12 -->
+          <article class="product-card">
+            <div class="product-card__image-wrapper">
+              <img class="product-card__image" src="img/preview.png" alt="Спецтехника">
+            </div>
+            <h3 class="product-card__title">Название модели</h3>
+            <p class="product-card__price">5 000 000₽</p>
+            <button class="product-card__button">Подробнее</button>
+          </article>
+        </div>
+
+
+        <!-- Пагинация -->
+        <nav class="pagination">
+          <!-- Кнопка "Назад" ведет на 1 страницу -->
+          <a href="page2.html" class="pagination__control">
+            <img src="icons/arrow_left.svg" alt="<">
+            <span>Назад</span>
+          </a>
+          <nav class="pagination">
+            <div class="pagination__pages">
+              <!-- Активная страница (1) -->
+              <a href="page1.html" class="pagination__page pagination__page">1</a>
+
+              <!-- Неактивные страницы (ведут на другие файлы) -->
+              <a href="page2.html" class="pagination__page pagination__page--active">2</a>
+              <a href="page3.html" class="pagination__page">3</a>
+            </div>
+
+
+            <a href="page2.html" class="pagination__control">
+              <span>Вперед</span>
+              <img src="icons/arrow_right.svg" alt=">">
+            </a>
+          </nav>
+      </div>
+    </section>
+
+
+
+    <!-- Футер -->
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__info">
+          <h2 class="footer__title">Свяжитесь С Нами</h2>
+          <p class="footer__text">Остались вопросы? Не стесняйтесь задавать их!</p>
+          <a href="mailto:example@gmail.com" class="footer__email">example@gmail.com</a>
+        </div>
+        <div class="footer__socials">
+          <a href="#" class="footer__social-link"><img src="icons/telegram.svg" alt="TG"></a>
+          <a href="#" class="footer__social-link"><img src="icons/vk.svg" alt="VK"></a>
+          <a href="#" class="footer__social-link"><img src="icons/whatsup.svg" alt="WA"></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

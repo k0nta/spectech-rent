@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход - Спецтехника</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page">
+
+    <!-- Хедер -->
+    <header class="header">
+            <div class="container header__container">
+                <!-- Кнопка Бургер (слева) -->
+                <button class="header__burger" id="burgerBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <!-- Логотип (по центру или как было) -->
+                <div class="header__logo">Спецтех</div>
+
+                <!-- Навигация для ПК (скроем на мобильных) -->
+                <nav class="header__nav">
+                    <a href="index.html" class="header__link">О Нас</a>
+                    <a href="page1.html" class="header__link">Каталог</a>
+                    <a href="contacts.html" class="header__link">Контакты</a>
+                    <a href="Services.html" class="header__link">Услуги</a>
+                </nav>
+
+                <!-- Логин (справа) -->
+                <a href="login.html" class="header__login header__link--active">
+                    <span class="header__login-icon">👤</span> Войти
+                </a>
+            </div>
+
+            <!-- Мобильное меню (скрыто по умолчанию) -->
+            <div class="header__mobile-menu" id="mobileMenu">
+                <button class="header__close-btn" id="closeBtn">&times;</button> <!-- Крестик -->
+                <nav class="mobile-nav">
+                    <a href="index.html" class="mobile-nav__link">О Нас</a>
+                    <a href="page1.html" class="mobile-nav__link">Каталог</a>
+                    <a href="contacts.html" class="mobile-nav__link">Контакты</a>
+                    <a href="Services.html" class="mobile-nav__link">Услуги</a>
+                </nav>
+            </div>
+        </header>
+
+    <!-- Основной контент: форма входа -->
+    <main class="main">
+        <section class="auth-section">
+            <div class="container">
+                <h1 class="auth-section__title">Вход</h1>
+                
+                <form class="auth-form" action="#" method="POST">
+                    <!-- Поле Email -->
+                    <div class="auth-form__group">
+                        <label for="email" class="auth-form__label">Email</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            class="auth-form__input" 
+                            required
+                        >
+                    </div>
+
+                    <!-- Поле Пароль -->
+                    <div class="auth-form__group">
+                        <label for="password" class="auth-form__label">Пароль</label>
+                        <input 
+                            type="password" 
+                            id="password" 
+                            name="password" 
+                            class="auth-form__input" 
+                            required
+                        >
+                    </div>
+
+                    <!-- Чекбокс "Запомнить меня" -->
+                    <div class="auth-form__checkbox-wrapper">
+                        <input 
+                            type="checkbox" 
+                            id="remember" 
+                            name="remember" 
+                            class="auth-form__checkbox"
+                        >
+                        <label for="remember" class="auth-form__checkbox-label">
+                            Запомнить меня
+                        </label>
+                    </div>
+
+                    <!-- Кнопка входа -->
+                    <button type="submit" class="auth-form__button">Вход</button>
+
+                    <!-- Вспомогательные ссылки -->
+                    <div class="auth-form__links">
+                        <a href="#" class="auth-form__link">Забыли пароль?</a>
+                        <a href="register.html" class="auth-form__link">Нет аккаунта?</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__info">
+                <h2 class="footer__title">Свяжитесь С Нами</h2>
+                <p class="footer__text">Остались вопросы? Не стесняйтесь задавать их!</p>
+                <a href="mailto:example@gmail.com" class="footer__email">example@gmail.com</a>
+            </div>
+            <div class="footer__socials">
+                <a href="#" class="social-link"><img src="icons/telegram.svg" alt="Telegram"></a>
+                <a href="#" class="social-link"><img src="icons/vk.svg" alt="VK"></a>
+                <a href="#" class="social-link"><img src="icons/whatsup.svg" alt="WhatsApp"></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Скрипт бургер-меню -->
+    <script src="js/script.js">
+    </script>
+</body>
+</html>
