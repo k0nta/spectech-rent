@@ -18,48 +18,48 @@
 <body class="page">
 
     <!-- Хедер -->
-            <header class="header">
-            <div class="container header__container">
-                <!-- Кнопка Бургер (слева) -->
-                <button class="header__burger" id="burgerBtn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+    <header class="header">
+        <div class="container header__container">
+            <!-- Кнопка Бургер (слева) -->
+            <button class="header__burger" id="burgerBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-                <!-- Логотип (по центру или как было) -->
-                <div class="header__logo">Спецтех</div>
+            <!-- Логотип (по центру или как было) -->
+            <div class="header__logo">Спецтех</div>
 
-                <!-- Навигация для ПК (скроем на мобильных) -->
-                <nav class="header__nav">
-                    <a href="index.html" class="header__link">О Нас</a>
-                    <a href="page1.html" class="header__link">Каталог</a>
-                    <a href="contacts.html" class="header__link header__link--active">Контакты</a>
-                    <a href="Services.html" class="header__link">Услуги</a>
-                </nav>
+            <!-- Навигация для ПК (скроем на мобильных) -->
+            <nav class="header__nav">
+                <a href="index.html" class="header__link">О Нас</a>
+                <a href="page1.html" class="header__link">Каталог</a>
+                <a href="contacts.html" class="header__link header__link--active">Контакты</a>
+                <a href="Services.html" class="header__link">Услуги</a>
+            </nav>
 
-                <!-- Логин (справа) -->
-                <a href="login.html" class="header__login">
-                    <span class="header__login-icon">👤</span> Войти
-                </a>
-            </div>
+            <!-- Логин (справа) -->
+            <a href="login.html" class="header__login">
+                <span class="header__login-icon">👤</span> Войти
+            </a>
+        </div>
 
-            <!-- Мобильное меню (скрыто по умолчанию) -->
-            <div class="header__mobile-menu" id="mobileMenu">
-                <button class="header__close-btn" id="closeBtn">&times;</button> <!-- Крестик -->
-                <nav class="mobile-nav">
-                    <a href="index.html" class="mobile-nav__link">О Нас</a>
-                    <a href="page1.html" class="mobile-nav__link">Каталог</a>
-                    <a href="contacts.html" class="mobile-nav__link">Контакты</a>
-                    <a href="Services.html" class="mobile-nav__link">Услуги</a>
-                </nav>
-            </div>
-        </header>
+        <!-- Мобильное меню (скрыто по умолчанию) -->
+        <div class="header__mobile-menu" id="mobileMenu">
+            <button class="header__close-btn" id="closeBtn">&times;</button> <!-- Крестик -->
+            <nav class="mobile-nav">
+                <a href="index.html" class="mobile-nav__link">О Нас</a>
+                <a href="page1.html" class="mobile-nav__link">Каталог</a>
+                <a href="contacts.html" class="mobile-nav__link">Контакты</a>
+                <a href="Services.html" class="mobile-nav__link">Услуги</a>
+            </nav>
+        </div>
+    </header>
 
     <!-- Основной контент -->
     <main class="main">
         <section class="contacts">
-            <div class="container">
+            <div class="container container--contacts">
                 <h1 class="contacts__title">Контакты</h1>
 
                 <div class="contacts__grid">
@@ -83,7 +83,7 @@
                         <button type="submit" class="contact-form__button">Отправить</button>
                     </form>
 
-                    <!-- Правая колонка: Инфо -->
+                    <!-- Правая колонка: Инфо + Карта -->
                     <div class="contact-info">
                         <div class="info-item">
                             <div class="info-item__icon-wrapper">
@@ -114,6 +114,20 @@
                                 <a href="mailto:example@mail.ru" class="info-item__text">example@mail.ru</a>
                             </div>
                         </div>
+
+                        <!-- Блок с картой -->
+                        <div class="contact-map">
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d272.2367427262023!2d37.98041663775138!3d56.26188296960609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1766008113475!5m2!1sru!2sru" 
+        width="100%" 
+        height="100%" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+                        </div>
+
                     </div>
                 </div>
             </div>
