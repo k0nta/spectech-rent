@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет - Спецтехника</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page">
+
+    <!-- Хедер -->
+   <header class="header">
+            <div class="container header__container">
+                <!-- Кнопка Бургер (слева) -->
+                <button class="header__burger" id="burgerBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <!-- Логотип (по центру или как было) -->
+                <div class="header__logo">Спецтех</div>
+
+                <!-- Навигация для ПК (скроем на мобильных) -->
+                <nav class="header__nav">
+                    <a href="index.html" class="header__link">О Нас</a>
+                    <a href="page1.html" class="header__link">Каталог</a>
+                    <a href="contacts.html" class="header__link">Контакты</a>
+                    <a href="services.html" class="header__link">Услуги</a>
+                </nav>
+
+                <!-- Логин (справа) -->
+                <a href="profile.html" class="header__login header__link--active"> Личный Кабинет
+                </a>
+            </div>
+
+            <!-- Мобильное меню (скрыто по умолчанию) -->
+            <div class="header__mobile-menu" id="mobileMenu">
+                <button class="header__close-btn" id="closeBtn">&times;</button> <!-- Крестик -->
+                <nav class="mobile-nav">
+                    <a href="index.html" class="mobile-nav__link">О Нас</a>
+                    <a href="page1.html" class="mobile-nav__link">Каталог</a>
+                    <a href="contacts.html" class="mobile-nav__link">Контакты</a>
+                    <a href="Services.html" class="mobile-nav__link">Услуги</a>
+                </nav>
+            </div>
+        </header>
+
+
+    <!-- Основной контент ЛК -->
+    <main class="main profile-page">
+        <div class="container profile-container">
+            
+            <!-- Сайдбар (Левая колонка) -->
+            <aside class="sidebar">
+                <h1 class="sidebar__title">Профиль</h1>
+                <nav class="sidebar-nav">
+                    <a href="#" class="sidebar-nav__link sidebar-nav__link--active">Мои заказы</a>
+                    <a href="#" class="sidebar-nav__link">Настройки</a>
+                </nav>
+            </aside>
+
+            <!-- Контент (Правая колонка) -->
+            <section class="profile-content">
+                
+                <!-- Информация о пользователе -->
+                <div class="user-info">
+                    <div class="user-info__avatar-wrapper">
+                        <!-- Заглушка или реальное фото -->
+                        <img src="images/avatar-placeholder.jpg" alt="Avatar" class="user-info__avatar">
+                    </div>
+                    <div class="user-info__details">
+                        <h2 class="user-info__name">iseedeadpeople</h2>
+                        <p class="user-info__email">examplemail@gmail.com</p>
+                        <p class="user-info__phone">+7 926 986 27 48</p>
+                    </div>
+                </div>
+
+                <!-- Кнопка редактировать -->
+                <button class="profile-edit-btn">Редактировать</button>
+
+                <div class="orders-section">
+                    <!-- Активные заказы -->
+                    <h3 class="orders-section__title">Активные заказы</h3>
+                    <div class="order-card order-card--active">
+                        <div class="order-card__info">
+                            <h4 class="order-card__name">Экскаватор</h4>
+                            <p class="order-card__date">10.11 - 30.12</p>
+                        </div>
+                        <div class="order-card__status order-card__status--green">
+                            Активный
+                        </div>
+                    </div>
+
+                    <!-- История заказов -->
+                    <h3 class="orders-section__title">История заказов</h3>
+                    
+                    <!-- Карточка 1 -->
+                    <div class="order-card">
+                        <div class="order-card__info">
+                            <h4 class="order-card__name">Самосвал</h4>
+                            <p class="order-card__date">15.10 - 10.11</p>
+                        </div>
+                        <div class="order-card__status order-card__status--gray">
+                            Завершен
+                        </div>
+                    </div>
+
+                    <!-- Карточка 2 -->
+                    <div class="order-card">
+                        <div class="order-card__info">
+                            <h4 class="order-card__name">Бетономешалка</h4>
+                            <p class="order-card__date">23.04 - 10.05</p>
+                        </div>
+                        <div class="order-card__status order-card__status--gray">
+                            Завершен
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <!-- Скрипт -->
+    <script src="js/script.js">
+    </script>
+</body>
+</html>

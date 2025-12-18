@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Вход - Спецтехника</title>
+    <title>Регистрация - Спецтехника</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -54,57 +54,53 @@
             </div>
         </header>
 
-    <!-- Основной контент: форма входа -->
+    <!-- Основной контент: Форма регистрации -->
     <main class="main">
         <section class="auth-section">
             <div class="container">
-                <h1 class="auth-section__title">Вход</h1>
+                <h1 class="auth-section__title">Регистрация</h1>
                 
                 <form class="auth-form" action="#" method="POST">
+                    
+                    <!-- Поле Имя -->
+                    <div class="auth-form__group">
+                        <label for="name" class="auth-form__label">Имя</label>
+                        <input type="text" id="name" name="name" class="auth-form__input" required>
+                    </div>
+
+                    <!-- Поле Телефон -->
+                    <div class="auth-form__group">
+                        <label for="phone" class="auth-form__label">Телефон</label>
+                        <input type="tel" id="phone" name="phone" class="auth-form__input" required>
+                    </div>
+
                     <!-- Поле Email -->
                     <div class="auth-form__group">
                         <label for="email" class="auth-form__label">Email</label>
-                        <input 
-                            type="email" 
-                            id="email" 
-                            name="email" 
-                            class="auth-form__input" 
-                            required
-                        >
+                        <input type="email" id="email" name="email" class="auth-form__input" required>
                     </div>
 
                     <!-- Поле Пароль -->
                     <div class="auth-form__group">
                         <label for="password" class="auth-form__label">Пароль</label>
-                        <input 
-                            type="password" 
-                            id="password" 
-                            name="password" 
-                            class="auth-form__input" 
-                            required
-                        >
+                        <input type="password" id="password" name="password" class="auth-form__input" required>
                     </div>
 
-                    <!-- Чекбокс "Запомнить меня" -->
-                    <div class="auth-form__checkbox-wrapper">
-                        <input 
-                            type="checkbox" 
-                            id="remember" 
-                            name="remember" 
-                            class="auth-form__checkbox"
-                        >
-                        <label for="remember" class="auth-form__checkbox-label">
-                            Запомнить меня
+                    <!-- Чекбокс Согласие -->
+                    <div class="auth-form__checkbox-wrapper auth-form__checkbox-wrapper--top-align">
+                        <input type="checkbox" id="consent" name="consent" class="auth-form__checkbox" required>
+                        <label for="consent" class="auth-form__checkbox-label">
+                            Я даю согласие на обработку персональных данных
                         </label>
                     </div>
 
-                    <!-- Кнопка входа -->
-                    <button type="submit" class="auth-form__button">Вход</button>
+                    <!-- Кнопка Регистрации -->
+                    <button type="submit" class="auth-form__button">Регистрация</button>
 
-                    <!-- Вспомогательные ссылки -->
-                    <div class="auth-form__links">
-                        <a href="#" class="auth-form__link">Забыли пароль?</a>
-                        <a href="register.html" class="auth-form__link">Нет аккаунта?</a>
+                    <!-- Ссылка на вход -->
+                    <div class="auth-form__footer-link">
+                        <span class="auth-form__text">Уже есть аккаунт?</span>
+                        <a href="login.html" class="auth-form__link">Вход</a>
                     </div>
                 </form>
             </div>
@@ -127,9 +123,7 @@
         </div>
     </footer>
 
-    <!-- Скрипт бургер-меню -->
     <script src="js/script.js">
     </script>
-    <script src="js/logintest.js"></script>
 </body>
 </html>
